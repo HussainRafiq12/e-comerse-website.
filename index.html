@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Watch Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Signup Section -->
+    <div id="signup-section">
+      <h2>Sign Up</h2>
+      <input
+        type="text"
+        id="signup-username"
+        placeholder="Enter your username"
+      />
+      <input
+        type="password"
+        id="signup-password"
+        placeholder="Enter your password"
+      />
+      <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Login Section -->
+    <div id="login-section" style="display: none">
+      <h2>Login</h2>
+      <input
+        type="text"
+        id="login-username"
+        placeholder="Enter your username"
+      />
+      <input
+        type="password"
+        id="login-password"
+        placeholder="Enter your password"
+      />
+      <button id="login-btn">Login</button>
+    </div>
+
+    <!-- E-commerce Website -->
+    <div id="website" style="display: none">
+      <nav>
+        <ul class="navbar">
+          <div class="logo">Best Watch</div>
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="cart-icon" id="cart-icon">🛒</li>
+        </ul>
+      </nav>
+
+      <main>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Welcome to Watch World</h1>
+            <p>Find the best watches for every occasion.</p>
+            <button>Shop Now</button>
+          </div>
+        </section>
+
+        <section id="products" class="items">
+          <div class="row1">
+            <div class="card">
+              <img src="images/download (35).jpeg" alt="Watch 1" />
+              <h3>Classic Watch</h3>
+              <p>Elegant design for formal wear.</p>
+              <p>Price: $120</p>
+              <button
+                class="add-to-cart"
+                data-name="Classic Watch"
+                data-price="120"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="card">
+              <img src="images/download (36).jpeg" alt="Watch 2" />
+              <h3>Sport Watch</h3>
+              <p>Durable and stylish for active lifestyles.</p>
+              <p>Price: $150</p>
+              <button
+                class="add-to-cart"
+                data-name="Sport Watch"
+                data-price="150"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="card">
+              <img src="images/images (22).jpeg" alt="Watch 3" />
+              <h3>Luxury Watch</h3>
+              <p>Premium watch for special occasions.</p>
+              <p>Price: $300</p>
+              <button
+                class="add-to-cart"
+                data-name="Luxury Watch"
+                data-price="300"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="card">
+              <img src="images/download (37).jpeg" alt="Watch 4" />
+              <h3>Digital Watch</h3>
+              <p>Modern design with advanced features.</p>
+              <p>Price: $200</p>
+              <button
+                class="add-to-cart"
+                data-name="Digital Watch"
+                data-price="200"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="card">
+              <img src="images/download (38).jpeg" alt="Watch 5" />
+              <h3>Analog Watch</h3>
+              <p>Timeless style for daily wear.</p>
+              <p>Price: $180</p>
+              <button
+                class="add-to-cart"
+                data-name="Analog Watch"
+                data-price="180"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="card">
+              <img src="images/download (40).jpeg" alt="Watch 6" />
+              <h3>Fitness Watch</h3>
+              <p>Track your fitness goals effectively.</p>
+              <p>Price: $250</p>
+              <button
+                class="add-to-cart"
+                data-name="Fitness Watch"
+                data-price="250"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Watch World. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Shopping Cart Section -->
+    <div id="cart-section" style="display: none">
+      <h2>Your Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

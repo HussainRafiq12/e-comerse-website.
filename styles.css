@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+  background-color: #ffdd00;
+  padding: 1rem;
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navbar li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.cart-icon {
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  background: url("images/rolex_gold_blue_stainless_steel_watch_hd_rolex-t2.jpg")
+    no-repeat center center/cover;
+  opacity: 0 0 0 0.4;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(246, 255, 0);
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+}
+.hero-content p {
+  font-size: 2.2rem;
+  margin: 1rem 0;
+}
+.hero-content button {
+  padding: 0.5rem 1rem;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Product Section */
+.items {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row1 {
+  display: flex;
+  gap: 9rem;
+  margin-left: 13rem;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  height: 30vh;
+}
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #eaff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.row2 {
+  display: flex;
+  gap: 10rem;
+  margin-left: 13rem;
+  margin-top: 3rem;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 90%;
+  height: 30vh;
+}
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #ffff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+/* Signup & Login Sections */
+#signup-section,
+#login-section {
+  background-color: #eaff00;
+  text-align: center;
+  margin: 5rem auto;
+  width: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+input {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 80%;
+}
+button {
+  padding: 0.7rem;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+/* Cart Section */
+#cart-section {
+  padding: 2rem;
+  text-align: center;
+}
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+#cart-items li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
